@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "round": 246,
+    "title": "β3=0.15-0.22 三吸引子多稳态(H/M/L)与不对称迟滞（read_verdict 精炼 + close 补全）",
+    "date": "2026-10-18",
+    "note": "完整原始 verdict 由 simulation/round246_P1_0.py(read_verdict) 从 round246_basin_hyst.json 一键再生；本摘要为其精炼并并入 round246_close.json 的延伸/长测程结论。",
+    "verdict_input": "round246_basin_hyst.json（24盆地case measure800 + 双seed绝热滞后 measure200）"
+  },
+  "attractors": {
+    "H_high": {
+      "ext": [0.43, 0.48],
+      "q48_power": "11-16%"
+    },
+    "M_mid": {
+      "ext": [0.33, 0.34],
+      "q48_power": "~9%"
+    },
+    "L_low": {
+      "ext": [0.085, 0.15],
+      "q48_power": "0.2-2.6%"
+    },
+    "all_lambda": "~0 锁模非混沌"
+  },
+  "thresholds": {
+    "HIGH_min": 0.38,
+    "MID_range": [0.28, 0.38],
+    "hysteresis_gap": 0.05,
+    "jump": 0.05,
+    "basin_tail_drift_limit": 0.03
+  },
+  "basin_counts": [
+    {"beta3": 0.19, "H": 3, "M": 1, "L": 0, "unsettled_seeds": [241]},
+    {"beta3": 0.2, "H": 1, "M": 2, "L": 1, "unsettled_seeds": [241]},
+    {"beta3": 0.205, "H": 3, "M": 1, "L": 0, "unsettled_seeds": [237, 240, 241, 242]},
+    {"beta3": 0.21, "H": 1, "M": 3, "L": 0, "unsettled_seeds": [241, 242]},
+    {"beta3": 0.215, "H": 0, "M": 1, "L": 3, "unsettled_seeds": []},
+    {"beta3": 0.22, "H": 0, "M": 0, "L": 4, "unsettled_seeds": [237]}
+  ],
+  "hysteresis": {
+    "seed240": {
+      "coexistence_b3": [0.18, 0.185, 0.19, 0.195, 0.2, 0.205, 0.21, 0.22],
+      "up_jumps": [
+        {"bracket": [0.205, 0.21], "from": 0.481, "to": 0.185, "from_attr": "HIGH", "to_attr": "LOW"},
+        {"bracket": [0.21, 0.215], "from": 0.185, "to": 0.084, "from_attr": "LOW", "to_attr": "LOW"},
+        {"bracket": [0.215, 0.22], "from": 0.084, "to": 0.023, "from_attr": "LOW", "to_attr": "LOW"}
+      ],
+      "down_jumps": [],
+      "aligned": [
+        {"beta3": 0.18, "up": 0.485, "down": 0.084, "gap": 0.401, "split": true},
+        {"beta3": 0.185, "up": 0.484, "down": 0.086, "gap": 0.399, "split": true},
+        {"beta3": 0.19, "up": 0.484, "down": 0.087, "gap": 0.397, "split": true},
+        {"beta3": 0.195, "up": 0.484, "down": 0.089, "gap": 0.395, "split": true},
+        {"beta3": 0.2, "up": 0.483, "down": 0.09, "gap": 0.393, "split": true},
+        {"beta3": 0.205, "up": 0.481, "down": 0.09, "gap": 0.39, "split": true},
+        {"beta3": 0.21, "up": 0.185, "down": 0.09, "gap": 0.095, "split": true},
+        {"beta3": 0.215, "up": 0.084, "down": 0.089, "gap": 0.006, "split": false},
+        {"beta3": 0.22, "up": 0.023, "down": 0.087, "gap": 0.065, "split": true}
+      ]
+    },
+    "seed242": {
+      "coexistence_b3": [0.18, 0.185, 0.19, 0.195, 0.2, 0.205, 0.21, 0.215, 0.22],
+      "up_jumps": [
+        {"bracket": [0.215, 0.22], "from": 0.432, "to": 0.159, "from_attr": "HIGH", "to_attr": "LOW"}
+      ],
+      "down_jumps": [
+        {"bracket": [0.205, 0.21], "from": 0.109, "to": 0.266, "from_attr": "LOW", "to_attr": "LOW"},
+        {"bracket": [0.2, 0.205], "from": 0.266, "to": 0.34, "from_attr": "LOW", "to_attr": "MID"}
+      ],
+      "aligned": [
+        {"beta3": 0.18, "up": 0.428, "down": 0.336, "gap": 0.092, "split": true},
+        {"beta3": 0.185, "up": 0.429, "down": 0.337, "gap": 0.092, "split": true},
+        {"beta3": 0.19, "up": 0.429, "down": 0.338, "gap": 0.091, "split": true},
+        {"beta3": 0.195, "up": 0.43, "down": 0.339, "gap": 0.091, "split": true},
+        {"beta3": 0.2, "up": 0.431, "down": 0.34, "gap": 0.091, "split": true},
+        {"beta3": 0.205, "up": 0.431, "down": 0.266, "gap": 0.165, "split": true},
+        {"beta3": 0.21, "up": 0.432, "down": 0.109, "gap": 0.322, "split": true},
+        {"beta3": 0.215, "up": 0.432, "down": 0.085, "gap": 0.347, "split": true},
+        {"beta3": 0.22, "up": 0.159, "down": 0.096, "gap": 0.064, "split": true}
+      ]
+    }
+  },
+  "robust_coexistence_b3_measure200": [0.18, 0.185, 0.19, 0.195, 0.2, 0.205, 0.21, 0.22],
+  "criteria_read_verdict": {
+    "n_hysteresis_seeds": 2,
+    "all_expected_basin_rows_present": true,
+    "all_basin_tail4_settled": false,
+    "up_jump_in_every_seed": true,
+    "down_jump_in_every_seed": false,
+    "shared_gap_points_in_all_seeds": true,
+    "no_sustained_chaotic_classification": true,
+    "first_order_path_dependence_supported_on_grid": false
+  },
+  "close_extension": {
+    "DOWN_measure300": {
+      "s240": "0.22->0.15 全程 L ext0.084-0.090 不跳回（L下临界点<=0.15）",
+      "s242": "0.22-0.21 L; 0.205=0.304过渡; 0.20->0.15 M(0.340->0.329) 不跳回"
+    },
+    "long_measure1600": {
+      "0.20_s241": "后4段恒定 M 0.340",
+      "0.205_s242": "先衰后跳, 后4段恒定 H 0.414"
+    }
+  },
+  "final_verdict": "经典两态对称一阶迟滞回线在当前网格不成立(first_order_path_dependence_supported_on_grid=false)；真实为 H/M/L 三吸引子多稳态 + 非对称seed依赖级联。H上失稳点 s240≈0.205-0.21 / s242≈0.215-0.22；L/M 向低β3保持到0.15以下。",
+  "unclosed": [
+    "L/M在β3<0.15失稳点未测(需扫0.10-0.12)",
+    "M态N160未验",
+    "L↔M转换seed依赖待多seed",
+    "0.205s242临界慢化时间尺度"
+  ]
+}
