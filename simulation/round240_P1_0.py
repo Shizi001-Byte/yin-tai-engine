@@ -291,7 +291,7 @@ def main():
         "npz_file": stem.with_suffix(".npz").name,
     }
 
-    with open(stem.with_suffix(".json"), encoding="utf-8") as f:
+    with open(stem.with_suffix(".json"), "w", encoding="utf-8") as f:
         json.dump(payload, f, indent=2, ensure_ascii=False)
 
     print(json.dumps(payload, indent=2, ensure_ascii=False))
