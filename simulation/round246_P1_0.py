@@ -303,7 +303,7 @@ def audit_log(path: Path) -> dict:
     ]
     return {
         "path": str(path),
-        "path": str(path),
+        "exists": True,
         "n_lines": len(lines),
         "has_traceback": "Traceback" in text,
         "error_lines_tail": error_lines[-10:],
