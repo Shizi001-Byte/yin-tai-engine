@@ -1,0 +1,90 @@
+{
+  "pass_reader": true,
+  "n_ext": 16,
+  "jump_tol": 0.05,
+  "expected_grid": [0.22, 0.215, 0.21, 0.205, 0.2, 0.195, 0.19, 0.185, 0.18, 0.175, 0.17, 0.165, 0.16, 0.155, 0.15, 0.145, 0.14, 0.135, 0.13, 0.125, 0.12, 0.115, 0.11, 0.105, 0.1],
+  "seeds": [240, 242],
+  "conflicts": [],
+  "per_seed": [
+    {
+      "seed": 240,
+      "n_points": 25,
+      "beta3_range": [0.1, 0.22],
+      "missing_beta3": [],
+      "table_desc": [
+        {"beta3": 0.22, "ext": 0.0875, "attractor": "LOW", "q48": 0.0044, "lam_last20": 0.0025, "measure": 200.0, "source": "round248"},
+        {"beta3": 0.215, "ext": 0.0892, "attractor": "LOW", "q48": 0.0073, "lam_last20": -0.0214, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.21, "ext": 0.0901, "attractor": "LOW", "q48": 0.0085, "lam_last20": -0.0185, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.205, "ext": 0.0902, "attractor": "LOW", "q48": 0.0074, "lam_last20": 0.0005, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.2, "ext": 0.0897, "attractor": "LOW", "q48": 0.0032, "lam_last20": -0.0038, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.195, "ext": 0.0889, "attractor": "LOW", "q48": 0.0068, "lam_last20": -0.0017, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.19, "ext": 0.0874, "attractor": "LOW", "q48": 0.0074, "lam_last20": -0.0004, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.185, "ext": 0.0856, "attractor": "LOW", "q48": 0.0045, "lam_last20": 0.0001, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.18, "ext": 0.0841, "attractor": "LOW", "q48": 0.0052, "lam_last20": 0.007, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.175, "ext": 0.0841, "attractor": "LOW", "q48": 0.0053, "lam_last20": 0.0004, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.17, "ext": 0.0849, "attractor": "LOW", "q48": 0.0054, "lam_last20": -0.0, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.165, "ext": 0.0858, "attractor": "LOW", "q48": 0.0055, "lam_last20": -0.0, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.16, "ext": 0.087, "attractor": "LOW", "q48": 0.0057, "lam_last20": 0.0, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.155, "ext": 0.0884, "attractor": "LOW", "q48": 0.0058, "lam_last20": -0.0, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.15, "ext": 0.0903, "attractor": "LOW", "q48": 0.0061, "lam_last20": 0.0, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.145, "ext": 0.0928, "attractor": "LOW", "q48": 0.0064, "lam_last20": -0.0, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.14, "ext": 0.0962, "attractor": "LOW", "q48": 0.0068, "lam_last20": -0.0, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.135, "ext": 0.1011, "attractor": "LOW", "q48": 0.0075, "lam_last20": 0.0, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.13, "ext": 0.1089, "attractor": "LOW", "q48": 0.0087, "lam_last20": -0.0, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.125, "ext": 0.3488, "attractor": "MID", "q48": 0.1026, "lam_last20": 0.0, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.12, "ext": 0.3598, "attractor": "MID", "q48": 0.1027, "lam_last20": 0.0, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.115, "ext": 0.3595, "attractor": "MID", "q48": 0.1027, "lam_last20": 0.0, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.11, "ext": 0.3593, "attractor": "MID", "q48": 0.1027, "lam_last20": 0.0, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.105, "ext": 0.359, "attractor": "MID", "q48": 0.1028, "lam_last20": -0.0, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.1, "ext": 0.3588, "attractor": "MID", "q48": 0.1028, "lam_last20": -0.0, "measure": 250.0, "source": "round248"}
+      ],
+      "jumps": [{"bracket_beta3": [0.125, 0.13], "ext_from": 0.10889847023508276, "ext_to": 0.3488376310041134, "delta_ext": 0.23993916076903066, "attractor_from": "LOW", "attractor_to": "MID"}],
+      "lowest_beta3_attractor": {"beta3": 0.1, "ext": 0.3587758098150114, "attractor": "MID"},
+      "down_arm_closed_in_window": true
+    },
+    {
+      "seed": 242,
+      "n_points": 24,
+      "beta3_range": [0.105, 0.22],
+      "missing_beta3": [0.1],
+      "table_desc": [
+        {"beta3": 0.22, "ext": 0.0957, "attractor": "LOW", "q48": 0.005, "lam_last20": 0.002, "measure": 200.0, "source": "round248"},
+        {"beta3": 0.215, "ext": 0.0854, "attractor": "LOW", "q48": 0.0044, "lam_last20": -0.0092, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.21, "ext": 0.1095, "attractor": "LOW", "q48": 0.0076, "lam_last20": 0.0063, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.205, "ext": 0.2162, "attractor": "LOW", "q48": 0.01, "lam_last20": 0.373, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.2, "ext": 0.1577, "attractor": "LOW", "q48": 0.0105, "lam_last20": 0.0021, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.195, "ext": 0.1636, "attractor": "LOW", "q48": 0.0307, "lam_last20": 0.0027, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.19, "ext": 0.1752, "attractor": "LOW", "q48": 0.0121, "lam_last20": 0.0159, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.185, "ext": 0.1923, "attractor": "LOW", "q48": 0.0146, "lam_last20": -0.0048, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.18, "ext": 0.1967, "attractor": "LOW", "q48": 0.0221, "lam_last20": -0.0022, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.175, "ext": 0.1945, "attractor": "LOW", "q48": 0.0026, "lam_last20": 0.0077, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.17, "ext": 0.188, "attractor": "LOW", "q48": 0.0377, "lam_last20": -0.0006, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.165, "ext": 0.1789, "attractor": "LOW", "q48": 0.0243, "lam_last20": -0.0038, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.16, "ext": 0.316, "attractor": "MID", "q48": 0.0939, "lam_last20": -0.0, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.155, "ext": 0.3486, "attractor": "MID", "q48": 0.0938, "lam_last20": 0.0, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.15, "ext": 0.3475, "attractor": "MID", "q48": 0.0936, "lam_last20": -0.0, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.145, "ext": 0.3465, "attractor": "MID", "q48": 0.0934, "lam_last20": 0.0, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.14, "ext": 0.3455, "attractor": "MID", "q48": 0.0932, "lam_last20": 0.0, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.135, "ext": 0.3446, "attractor": "MID", "q48": 0.093, "lam_last20": -0.0, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.13, "ext": 0.3437, "attractor": "MID", "q48": 0.0928, "lam_last20": 0.0, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.125, "ext": 0.3428, "attractor": "MID", "q48": 0.0926, "lam_last20": -0.0, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.12, "ext": 0.342, "attractor": "MID", "q48": 0.0924, "lam_last20": 0.0, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.115, "ext": 0.3412, "attractor": "MID", "q48": 0.0922, "lam_last20": 0.0, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.11, "ext": 0.3405, "attractor": "MID", "q48": 0.092, "lam_last20": -0.0, "measure": 250.0, "source": "round248"},
+        {"beta3": 0.105, "ext": 0.3397, "attractor": "MID", "q48": 0.0918, "lam_last20": 0.0, "measure": 250.0, "source": "round248"}
+      ],
+      "jumps": [
+        {"bracket_beta3": [0.205, 0.21], "ext_from": 0.10948547614435208, "ext_to": 0.2162457475380498, "delta_ext": 0.1067602713936977, "attractor_from": "LOW", "attractor_to": "LOW"},
+        {"bracket_beta3": [0.2, 0.205], "ext_from": 0.2162457475380498, "ext_to": 0.1576596943673496, "delta_ext": -0.058586053170700175, "attractor_from": "LOW", "attractor_to": "LOW"},
+        {"bracket_beta3": [0.16, 0.165], "ext_from": 0.1789466565241207, "ext_to": 0.3160322998771036, "delta_ext": 0.13708564335298287, "attractor_from": "LOW", "attractor_to": "MID"}
+      ],
+      "lowest_beta3_attractor": {"beta3": 0.105, "ext": 0.33974849898861265, "attractor": "MID"},
+      "down_arm_closed_in_window": true
+    }
+  ],
+  "verdict_by_seed": {
+    "240": "H2/H3: 最低跳变落在 beta3∈[0.125,0.130]，LOW->MID",
+    "242": "H2/H3: 最低跳变落在 beta3∈[0.160,0.165]，LOW->MID"
+  },
+  "down_arm_fully_closed": false
+}
