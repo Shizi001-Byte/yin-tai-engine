@@ -1,0 +1,13 @@
+# 应用方式（在 yin_tai_engine_v1/ 下执行）：
+#   sed -i '14s/默认3000/默认600/' wake_trigger.py
+#   sed -i '183s/"3000"/"600"/' wake_trigger.py
+#   python3 wake_trigger.py --selftest
+#
+# 变更（#288, 2026-10-24）：
+-# WAKE_MIN_GAP 默认 3000（50 分钟）——会把下一个整点静默判成 DUP_GAP
++WAKE_MIN_GAP 默认 600（10 分钟）
+#
+# 原因：08:07 触发时距 07:20:39 上一次 ATTEMPT 仅 46.6 分钟 < 50，被 DUP_GAP 跳过；
+# 同小时桶重复已由 bucket==last_bucket 完全覆盖，故 min_gap 只用于防重试风暴。
+#
+# 改后本地 wake_trigger.py sha256 = 1e3bb6af5075c93375e290677e72a2ca5c1cf47403235ed808ed398796bf2c1a
